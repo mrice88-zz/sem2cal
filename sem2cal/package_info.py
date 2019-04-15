@@ -76,9 +76,6 @@ class PackageInfo(object):
             self.package_maintainer_email = maintainer_email
 
     def time_passed_since_update(self, humanize: bool = False) -> str:
-        # TODO doesnt handle the search_version
-        # if version given, it should be from there.
-        # time.time()
         if self.search_version_release_date:
             start_time = arrow.get(self.search_version_release_date)
         else:
