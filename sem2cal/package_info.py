@@ -2,6 +2,7 @@ import requests
 import attr
 import arrow
 
+
 @attr.s
 class PackageInfo(object):
     name = attr.ib(type=str)
